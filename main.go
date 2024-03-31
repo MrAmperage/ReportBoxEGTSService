@@ -1,8 +1,16 @@
 package main
 
-import Application "github.com/MrAmperage/ReportBoxEGTSService/Application"
+import (
+	"fmt"
+
+	Application "github.com/MrAmperage/ReportBoxEGTSService/Application"
+)
 
 func main() {
 	Application := &Application.Application{}
-	Application.Start()
+	Error := Application.Start()
+	if Error != nil {
+		fmt.Println(Error)
+	}
+
 }
