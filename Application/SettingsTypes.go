@@ -10,4 +10,5 @@ type Settings struct {
 	PostgreSQLLogin      string
 	PostgreSQLPassword   string
 	PostgreSQLConnection *gorm.DB
+	ServerType           string
 }
